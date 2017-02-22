@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: index.get
       Runtime: nodejs4.3
-      CodeUri: s3://gw-sam-apiwithlambda/api_backend.zip
+      CodeUri: ./
       Policies: AmazonDynamoDBReadOnlyAccess
       Environment:
         Variables:
@@ -24,7 +24,7 @@ Resources:
     Properties:
       Handler: index.put
       Runtime: nodejs4.3
-      CodeUri: s3://gw-sam-apiwithlambda/api_backend.zip
+      CodeUri: ./
       Policies: AmazonDynamoDBFullAccess
       Environment:
         Variables:
@@ -41,7 +41,7 @@ Resources:
     Properties:
       Handler: index.delete
       Runtime: nodejs4.3
-      CodeUri: s3://gw-sam-apiwithlambda/api_backend.zip
+      CodeUri: ./
       Policies: AmazonDynamoDBFullAccess
       Environment:
         Variables:
