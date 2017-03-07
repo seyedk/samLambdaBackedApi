@@ -1,6 +1,6 @@
 'use strict';
 
-
+var aVariable = 123;
 const AWS = require('aws-sdk');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
