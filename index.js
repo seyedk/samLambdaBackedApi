@@ -2,7 +2,7 @@
 
 const AWS = require('aws-sdk');
 const dynamo = new AWS.DynamoDB.DocumentClient();
-var myInteger =1234;
+
 const tableName = process.env.TABLE_NAME;
 
 const createResponse = (statusCode, body) => {
